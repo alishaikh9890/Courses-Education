@@ -7,6 +7,39 @@
     padding-top: 100px;
     margin-bottom:-120px;
 }
+.nav-back{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+
+}
+
+
+.slick-prev:before{
+    color:gainsboro !important
+}
+.slick-next:before{
+    color:gainsboro !important
+}
+
+.bg-purple{
+background: linear-gradient(to bottom, #eae2fe 0%, #a376ff 1%, #ea68ff 98%, #ec7dfe 99%, #f3f3fa 99%, #f4f5fa 100%);;
+}
+
+.skill-feature-list{
+    list-style-type: "\2713";
+}
+
+.skill-feature-list > li:before{
+content: " ";
+padding:0 10px
+}
+
+.subject-back{
+    background-color: black;
+
+}
 
 
 @media(max-width:575px){
