@@ -1,3 +1,17 @@
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+    font-family: "Mulish", sans-serif;
+}
+
+
+
+
+
+
 .banner{
     background-image: url(../img/banner.png);
     height: 100vh;
