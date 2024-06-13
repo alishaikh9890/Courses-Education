@@ -4,11 +4,29 @@
 }
 
 p {
-    font-family: "Mulish", sans-serif;
+    font-family: "Mulish",sans-serif;
+     color: #57667e;
+     font-size: 16px;
+     font-weight: 400;
+}
+a{
+    font-family: "Mulish",sans-serif;
 }
 
+.text-purple{
+    color: #C86FFF;
+}
+.bg-purple{
+    background-color: #C86FFF;
+}
 
+.footer-copy-right{
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Mulish", sans-serif;
 
+}
 
 
 
@@ -52,7 +70,28 @@ padding:0 10px
 
 .subject-back{
     background-color: black;
+}
 
+.text-decoration{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+footer ul > li{
+    margin-bottom:15px;
+    font-weight: 400;
+}
+
+.bg-footer{
+    background: #4255A4;
+}
+
+.footer-tittle h4{
+    margin-bottom: 29px;
 }
 
 
