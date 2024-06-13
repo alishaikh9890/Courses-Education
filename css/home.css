@@ -25,9 +25,14 @@ a{
     font-weight: normal;
     font-style: normal;
     font-family: "Mulish", sans-serif;
-
 }
-
+.foot-icon{
+    background:rgba(128,136,255,0.1);
+    margin-left: 10px;
+}
+.foot-icon:hover{
+    background-color: #C86FFF;
+}
 
 
 .banner{
@@ -40,10 +45,7 @@ a{
     margin-bottom:-120px;
 }
 .nav-back{
-    background-image: url(../img/banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:top;
+    background: linear-gradient(to bottom, #c054ff 0%, #5274ff 100%);
 
 }
 
@@ -115,3 +117,40 @@ footer ul > li{
         font-size:60px;
     }
 }
+.btn-purple{
+    position: relative;
+    overflow: hidden;
+    background-color: #FF9F67;
+    color: #fff;
+}
+.btn-purple:hover {
+    /* Generic Hover style for a button */
+    color: #fff;
+  }
+  
+  .btn-purple::after {
+    /* Adds the overlay for creating slide effect */
+    content: '';
+    position: absolute;
+    background-color: #AE59FF;
+    z-index: -1;
+    padding: 0.25em 0.5em;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn-purple:hover::after {
+    /* Hover effect for the overlay slide effect */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn-purple::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
