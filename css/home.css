@@ -3,6 +3,26 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
+@media (min-width:991px){
+    nav{
+    position: fixed;
+	top: -100px !important;
+	transition: all 0.4s;
+  opacity: 0;
+}
+.displayNav {
+	top: 0px !important;
+	transition: all 0.4s;
+  opacity: 1;
+}
+}
+
+@media (max-width:991px){
+    .just{
+        display: none;
+    }
+}
+
 p {
     font-family: "Mulish",sans-serif;
      color: #57667e;
@@ -117,15 +137,21 @@ footer ul > li{
         font-size:60px;
     }
 }
+
+
+
+
 .btn-purple{
     position: relative;
     overflow: hidden;
     background-color: #FF9F67;
     color: #fff;
+    padding: 11px 35px;
 }
 .btn-purple:hover {
     /* Generic Hover style for a button */
     color: #fff;
+    
   }
   
   .btn-purple::after {
@@ -154,3 +180,93 @@ footer ul > li{
     left: -100%;
     right: 100%;
   }
+
+
+
+
+
+
+.btn-orange{
+    position: relative;
+    overflow: hidden;
+  border: 1px solid white;
+    color: #fff;
+    padding: 11px 35px;
+}
+.btn-orange:hover {
+    /* Generic Hover style for a button */
+    color: #fff;
+  }
+  
+  .btn-orange::after {
+    /* Adds the overlay for creating slide effect */
+    content: '';
+    position: absolute;
+    background-color: #FF9F67;
+    z-index: -1;
+    padding: 0.25em 0.5em;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn-orange:hover::after {
+    /* Hover effect for the overlay slide effect */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn-orange::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+
+
+
+
+
+
+.btn-view{
+    position: relative;
+    overflow: hidden;
+  border: 1px solid #FF9F67;
+    color: #FF9F67;
+    padding: 11px 35px;
+}
+.btn-view:hover {
+    /* Generic Hover style for a button */
+    color: #fff;
+  }
+  
+  .btn-view::after {
+    /* Adds the overlay for creating slide effect */
+    content: '';
+    position: absolute;
+    background-color: #FF9F67;
+    z-index: -1;
+    padding: 0.25em 0.5em;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn-view:hover::after {
+    /* Hover effect for the overlay slide effect */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  
+  .btn-view::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+
+  
