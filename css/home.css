@@ -1,7 +1,45 @@
 
 * {
     font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* ---------  Contact Page Start  --------- */
+
+.font-roboto{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-roboto::placeholder {
+    color: rgb(163, 163, 163);
+  }
+
+  .border-purple{
+    border: 1px solid #C86FFF ;
+    letter-spacing: 2px;
+    color: #C86FFF;
+    background-color: transparent;
+    transition: all 0.5s;
+  }
+
+  .border-purple:hover{
+    background-color: #C86FFF;
+    color: white;
+  }
+
+  .icons i{
+    color:gray;
+    font-size: 29px;
+  }
+
+
+
+/* ---------  Contact Page ends  --------- */
+
+
 
 @media (min-width:991px){
     nav{
@@ -24,7 +62,7 @@
 }
 
 p {
-    font-family: "Mulish",sans-serif;
+    font-family: "Mulish",sans-serif !important;
      color: #57667e;
      font-size: 16px;
      font-weight: 400;
@@ -39,6 +77,9 @@ a{
 .bg-purple{
     background-color: #C86FFF;
 }
+/* .bg-transperent{
+    background-color: transparent;
+} */
 
 .footer-copy-right{
     letter-spacing: 1px;
@@ -57,11 +98,29 @@ a{
 
 .banner{
     background-image: url(../img/banner.png);
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 100px;
+    padding-top: 100px;  
+}
+
+.courses-banner{
+    background-image: url(../img/courses-banner.png);
+    height: 42vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 100px;  
+}
+
+@media (max-width:767px){
+    .courses-banner{
+        height: 33vh;
+    }
+}
+
+.mb-120{
     margin-bottom:-120px;
 }
 .nav-back{
@@ -158,7 +217,7 @@ footer ul > li{
     /* Adds the overlay for creating slide effect */
     content: '';
     position: absolute;
-    background-color: #AE59FF;
+    background-color: #c054ff;
     z-index: -1;
     padding: 0.25em 0.5em;
     display: block;
